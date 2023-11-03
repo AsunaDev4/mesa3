@@ -1,0 +1,52 @@
+#########################################################################
+#  _____  _                       _                             _       #
+# |  __ \(_)                     | |                           | |      #
+# | |  | |_ ___  ___ ___  _ __ __| |         __ _  __ _ _ __ __| | __ _ #
+# | |  | | / __|/ __/ _ \| '__/ _` |        / _` |/ _` | '__/ _` |/ _` |#
+# | |__| | \__ \ (_| (_) | | | (_| |       | (_| | (_| | | | (_| | (_| |#
+# |_____/|_|___/\___\___/|_|  \__,_|        \__,_|\__,_|_|  \__,_|\__,_|#
+#                                       ______                          #
+#                                      |______|                         #
+#########################################################################
+bot:
+  # Discord botunuzun tokeni
+  token: 'MTE2NjM2NTYwNDA5ODM0MzAyMg.GDQZA3.IaYppnaT0rZEAoqTo_4byjbNCR77Afji2VdRfM'
+  # Discord botunuzun application idsi
+  id: '1166365604098343022'
+  # Discord botunun durum kısmı
+  status:
+    # Discord botunun açıklma kısmındaki event; playing = Oynuyor, streaming = Yayında, listening = Dinliyor, watching = İzliyor, competing = Yarışmada yarışıyor.
+    activity: 'streaming'
+    # Discord botunun açıklama yazısı; %onDutyPolice% yazarak aktif mesaideki memurların sayısını gösterebilirsiniz.
+    text: '%onDutyPolice% Kişi Mesaide! - Newadors Yönetiyor!'
+    # Discord botunun açıklma kısmındaki event streaming olarak ayarlanırsa aşağıdaki twitch kısmını doldurunuz.
+    twitch: 'https://www.twitch.tv/example'
+    # Discord botunun aktiflik kısmı; online = Aktif, idle = Boşta, dnd = Rahatsız Etmeyin, invisible = Çevrimdışı.
+    status: 'idle'
+guild:
+  # Discord sunucunuzun idsi
+  id: '1164158876116058242'
+settings:
+  departmentName: 'San Andreas State Department'
+  departmentLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/U.S._Department_of_State_official_seal.svg/2048px-U.S._Department_of_State_official_seal.svg.png'
+  departmentBanner: 'https://cdn.discordapp.com/attachments/1164158877529542737/1170095875498983565/state.png?ex=6557cbb4&is=654556b4&hm=cf89021ff37a9679bf15f5141b938d8e7e08140ce7632ba3f8aab2e0f5c966fa&'
+  departmentColor: '#0000ff'
+  roles:
+    # Rütbe rollerinin idleri
+    officers: ['1164158876451610689', '']
+  channels:
+    # Log kanalının idsi
+    log: '1164158877529542737'
+  # Mesaj içerikelrinde kulanılan emojiler, 📋 şeklinde, :emojiAdı: şeklinde veya idsiyle kullanılabilir.
+  emojis:
+    department: '👮'
+    on: '🟩'
+    off: '🟥'
+    warning: '⚠️'
+    info: '📋'
+    clock: '⏲️'
+commands:
+    # Aktif mesaideki üyeleri gösteren komut
+    activeDuty:
+      # Bu komutu kullanabilmek için gereken rol
+      requiredRole: '1164158876451610689'
